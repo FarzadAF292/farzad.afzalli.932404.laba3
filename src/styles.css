@@ -1,0 +1,169 @@
+/* Variables for colors */
+:root {
+  --primary-color: #f97316;
+  --accent-color: #ffffff;
+  --text-color: #222222;
+  --light-bg: #fff7ed;
+  --aside-bg: #fff3e8;
+  --font-main: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-main);
+  background-color: var(--accent-color);
+  color: var(--text-color);
+}
+
+/* Relative Positioning */
+header {
+  position: relative;
+  background-color: var(--primary-color);
+  text-align: center;
+  padding: 30px 20px;
+}
+
+/* Absolute Positioning */
+.startup-badge {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Static positioning */
+#skills {
+  position: static;
+}
+
+header h1,
+header h2 {
+  color: var(--accent-color);
+}
+
+/* Navigation link states */
+nav a:hover {
+  text-decoration: underline;
+}
+
+nav a:visited {
+  color: #fff3e8;
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+section,
+aside,
+form {
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: var(--primary-color);
+}
+
+img {
+  display: block;
+  margin: 20px auto;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+aside {
+  background-color: var(--aside-bg);
+  padding: 20px;
+  border-left: 5px solid var(--primary-color);
+}
+
+form {
+  background-color: var(--light-bg);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+/* Form field focus state */
+input:focus,
+textarea:focus {
+  outline: 2px solid var(--primary-color);
+  border-radius: 4px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+textarea {
+  min-height: 120px;
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  color: var(--accent-color);
+  border: none;
+  cursor: pointer;
+}
+
+/* Variant 16: animated gradient button */
+button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  color: var(--accent-color);
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+
+  background: linear-gradient(90deg, #f97316, #fb923c, #f97316);
+
+  background-size: 200% 100%;
+  background-position: left center;
+  transition:
+    background-position 0.4s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+/* Gradient moves on hover */
+button:hover {
+  background-position: right center;
+}
+
+/* White outline and shadow on focus */
+button:focus {
+  outline: 3px solid var(--accent-color);
+  box-shadow: 0 0 0 4px var(--primary-color);
+}
+
+/* Smaller gradient shift on active */
+button:active {
+  background-position: center;
+  transform: scale(0.98);
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: var(--accent-color);
+  text-align: center;
+  padding: 15px;
+}
