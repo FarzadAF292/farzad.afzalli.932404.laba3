@@ -248,3 +248,67 @@ footer {
   text-align: center;
   padding: 15px;
 }
+
+/* RESPONSIVE DESIGN */
+
+/* Tablet */
+@media (max-width: 900px) {
+  .startup-card {
+    flex: 1 1 calc(50% - 20px);
+  }
+
+  .metrics-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  main {
+    padding: 20px 15px;
+  }
+
+  header {
+    padding: 25px 15px;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav a {
+    margin: 0;
+  }
+
+  .startup-badge {
+    position: static;
+    display: inline-block;
+    margin-top: 10px;
+  }
+
+  .startup-card {
+    flex: 1 1 100%;
+    min-width: 0;
+  }
+
+  .metrics-grid {
+    grid-template-columns: 1fr;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  input,
+  textarea,
+  button {
+    max-width: 100%;
+  }
+}
