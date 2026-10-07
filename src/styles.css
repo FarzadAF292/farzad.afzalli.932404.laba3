@@ -1,7 +1,7 @@
 /* ROOT VARIABLES */
 
 :root {
-  --primary-color: #f97316;
+  --primary-color: #c2410c;
   --accent-color: #ffffff;
   --text-color: #222222;
   --light-bg: #fff7ed;
@@ -74,7 +74,7 @@ nav a:hover {
 }
 
 nav a:visited {
-  color: var(--aside-bg);
+  color: var(--accent-color);
 }
 
 /* SKILLS SECTION */
@@ -203,12 +203,7 @@ button {
   font-weight: bold;
   cursor: pointer;
 
-  background: linear-gradient(
-    90deg,
-    var(--primary-color),
-    #fb923c,
-    var(--primary-color)
-  );
+  background: linear-gradient(90deg, #c2410c, #9a3412, #c2410c);
 
   background-size: 200% 100%;
   background-position: left center;
@@ -278,7 +273,8 @@ footer {
 
   nav {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 10px;
   }
 
